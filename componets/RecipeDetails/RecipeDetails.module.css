@@ -1,0 +1,26 @@
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5em;
+} 
+.detailsContainer img{
+    margin-right: 5em;
+} 
+.col{
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    height: 80%;
+}
+.recipeImage{
+    border-radius: 10px;
+}
+
+.movieDetails{
+    font-size: 1.5rem;
+}
+.firtsItem{
+    margin-top: 0;
+    width: 15em;
+}

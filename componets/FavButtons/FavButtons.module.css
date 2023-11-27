@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 5em;
+    margin-top: 1em;
+  }
+  
+  .message {
+    color: red;
+    margin: 16px;
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      margin: 0;
+    }
+  }

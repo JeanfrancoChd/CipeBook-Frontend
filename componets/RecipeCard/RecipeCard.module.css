@@ -1,0 +1,27 @@
+.recipeCard {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .recipeCard:hover {
+    opacity: 0.8;
+  }
+  
+  .recipeImage {
+    border-radius: 10px;
+    background-color: azure;
+  }
+  .recipeName{
+    margin: 10px 0 0 100px;
+  }
+  
+  @media (max-width: 560px) {
+    .recipeImage {
+      width: 100%;
+      height: auto;
+    }
+    .recipeName{
+      margin:0;
+    }
+  }
+  

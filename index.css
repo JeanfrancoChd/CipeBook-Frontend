@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.back {
+  background-color: rgb(223, 145, 81);
+}
+.fond {
+  background-color: rgb(222, 45, 45);
+}
+
+a:hover {
+  color: rgb(138, 84, 39);
+}
+
+.borderForm {
+  background-color: aquamarine;
+  border: 1px solid;
+  width: 80vh;
+  height: 70vh;
+  margin: 5em;
+}
+
+.borderForm * {
+  margin-top: 20px;
+}
+
+.borderForm h1 {
+  margin-top: 90px;
+}
+h2, h5 {
+  color: rgb(64, 64, 96);
+  ;
+}
+
+/*------FORMULARIO-------*/
+iframe {
+  margin: 5em 0 3em 0em;
+}
+
+#wrapper {
+  margin-top: 5em;
+  height: 30em;
+
+}
+
+#wrapper h2 {
+  color: rgb(64, 64, 96);
+  ;
+}
+
+.form .text-input,
+.form .textarea,
+.form .label,
+.form .button {
+  padding: 1em 1.5em;
+
+  appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.form .text-input,
+.form .textarea {
+  font: inherit;
+  line-height: normal;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+  background: transparent;
+  outline: none;
+  color: black;
+}
+
+.form .text-input:placeholder,
+.form .textarea:placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.active .form .label,
+.form .active .label {
+  font-size: .75em;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.7);
+  background: white;
+}
+
+.focus .form .label,
+.form .focus .label {
+  color: black;
+}
+
+.form.has-floated-label .field:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid black;
+  transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.form.has-floated-label .field.focus:after {
+  width: 100%;
+}
+
+.form .button {
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  background-color: rgb(37, 129, 143);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.14286em;
+}
+
+.form .button:hover,
+.form .button:focus,
+.form .button:active {
+  color: white;
+  background-color: rgba(64, 64, 96, 0.527);
+}
+
+.form .button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.form {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.form .field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5em;
+  float: left;
+}
+
+@media screen and (min-width: 40em) {
+  .form .field.half {
+    width: calc(50% - 2em);
+    margin-right: 2em;
+  }
+
+  .form .field.half+.half {
+    margin-left: 2em;
+    margin-right: 0;
+  }
+}
+
+.form .field:last-child {
+  float: right;
+  width: auto;
+}
+
+.form .textarea {
+  max-width: 100%;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td {
+  padding: 10px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=file] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: rgb(37, 129, 143);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #858c98;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: rgb(196, 247, 241);
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+.createRecipe {
+  margin-bottom: 25em;
+}
+
+select, option{
+  width: 10em;
+  text-align: center;
+}
